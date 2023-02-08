@@ -8,7 +8,7 @@ steps:
     command: /tmp/wizcli auth --id $$WIZ_CLIENT_ID --secret $$WIZ_CLIENT_SECRET
 
 
-  - label: "List directories"
-    command: ls -lha
+  - label: "Scan IaC"
+    command: /tmp/wizcli iac scan --path azure/terraform-aks-fail
     
     
