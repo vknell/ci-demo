@@ -5,7 +5,7 @@ steps:
       - sudo chmod +x /tmp/wizcli 
   
   - label: "Authenticate Wiz-CLI"
-    command: /tmp/wizcli auth --id $WIZ_CLIENT_ID --secret $WIZ_CLIENT_SECRET
+    command: /tmp/wizcli auth --id $$WIZ_CLIENT_ID --secret $$WIZ_CLIENT_SECRET
 
 
   - label: "List directories"
