@@ -1,3 +1,9 @@
 steps:
   - label: "Download Wiz-CLI"
-    command: echo "Downloading Wiz-CLI"
+    command: sudo curl -o /tmp/wizcli https://wizcli.demo.wiz.io/latest/wizcli
+   
+  - label: "Authenticate Wiz-CLI"
+    command: sudo chmod +x /tmp/wizcli 
+  
+  - label: "Authenticate Wiz-CLI"
+    command: /tmp/wizcli auth --id $WIZ_CLIENT_ID --secret $WIZ_CLIENT_SECRET 
