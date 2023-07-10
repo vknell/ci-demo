@@ -1,5 +1,0 @@
-steps:
-  - label: "Download Wiz-CLI"
-    command: 
-      - echo "This is the repo step"
-    
